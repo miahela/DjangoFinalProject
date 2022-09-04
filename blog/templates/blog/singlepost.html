@@ -1,0 +1,89 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="course_header">
+        <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a" alt="Whatever">
+        <h1>Intro to blockchain - From zero to hero</h1>
+        <div class="additional_info">
+            <p class="course_author">Mimence</p>
+            <p>10 hrs</p>
+            <p>Last accessed: <span>Never</span></p>
+        </div>
+    </div>
+    <div class="course_main_content">
+        <p>
+            Pretium curae; turpis nisl malesuada curabitur, elit facilisis congue. Malesuada massa feugiat hendrerit et euismod nibh fusce dis euismod ut vel. Arcu volutpat inceptos conubia praesent phasellus, diam nunc commodo! Vulputate felis tellus dictum sodales. Ridiculus conubia bibendum rhoncus eget quisque nibh aptent aliquam, iaculis dapibus malesuada? Vel aliquam proin.
+        </p>
+        <p>
+            Porttitor porta condimentum est tincidunt placerat pulvinar lectus nibh cras. Habitasse sed cras pulvinar magna scelerisque platea suspendisse ad? Purus magna litora lorem habitant parturient, rhoncus eget curae; sem nibh. Nostra ad congue; netus dictum! Himenaeos fusce feugiat eleifend mollis sociis. Sagittis iaculis, curae; diam. Mauris diam aenean nisi fermentum. Arcu interdum lobortis montes!
+        </p>
+        <p>
+            Nascetur torquent suspendisse ultricies auctor dictumst quisque vehicula suspendisse! Dui lacinia pellentesque libero consequat tellus praesent facilisi imperdiet elit fringilla. Porttitor habitant morbi etiam vivamus. Sapien tortor ac suspendisse integer neque maecenas vel tincidunt et cubilia elementum. Euismod euismod donec vulputate pharetra rutrum malesuada ultrices mollis ad. Natoque quam est accumsan natoque aenean. Porttitor etiam dis nibh potenti blandit natoque gravida ut. Parturient habitasse hac duis euismod tincidunt, lacinia.
+        </p>
+        <p>
+            Quis donec hac montes integer iaculis odio conubia a a ipsum elit! Congue habitant aenean parturient! Erat penatibus praesent semper consequat parturient. Nulla ultricies donec volutpat dignissim consectetur nunc enim sapien at dignissim. Consectetur fusce torquent commodo massa augue euismod? Maecenas habitant laoreet felis, netus praesent. Urna sagittis primis habitant tristique sapien vulputate ullamcorper. Justo bibendum mi scelerisque suscipit. Praesent nulla class mi! Class posuere nascetur pellentesque! Conubia fringilla suspendisse montes semper lacus dictumst! Integer, ut suspendisse tempor neque pharetra quisque netus posuere pharetra mus congue? Nunc ridiculus.
+        </p>
+        <p>
+            Leo odio curae; mauris? Potenti consectetur fames posuere vel interdum tristique convallis libero taciti. Lacus tempus semper ac elementum consectetur lacus mauris ut phasellus fringilla mi? Semper ullamcorper molestie aenean lectus rutrum tortor. Sollicitudin pellentesque odio proin donec, aenean tincidunt accumsan conubia arcu. Cubilia felis dis non mus eu bibendum tortor tincidunt litora porta magna. Viverra interdum leo aptent turpis commodo nostra justo risus fermentum sapien quis.
+        </p>
+
+        <div class="quiz_div">
+            <!-- start Quiz button -->
+            <div class="start_btn"><button>Start Quiz</button></div>
+            <!-- Info Box -->
+            <div class="info_box">
+                <div class="info-title"><span>Some Rules of this Quiz</span></div>
+                <div class="info-list">
+                    <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                    <div class="info">2. Once you select your answer, it can't be undone.</div>
+                    <div class="info">3. You can't select any option once time goes off.</div>
+                    <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                    <div class="info">5. You'll get points on the basis of your correct answers.</div>
+                </div>
+                <div class="buttons">
+                    <button class="quit">Exit Quiz</button>
+                    <button class="restart">Continue</button>
+                </div>
+            </div>
+            <!-- Quiz Box -->
+            <div class="quiz_box">
+                <header>
+                    <div class="title">Intro to blockchain - From zero to hero</div>
+                    <div class="timer">
+                        <div class="time_left_txt">Time Left</div>
+                        <div class="timer_sec">15</div>
+                    </div>
+                    <div class="time_line"></div>
+                </header>
+                <section>
+                    <div class="que_text">
+                        <!-- Here I've inserted question from JavaScript -->
+                    </div>
+                    <div class="option_list">
+                        <!-- Here I've inserted options from JavaScript -->
+                    </div>
+                </section>
+                <!-- footer of Quiz Box -->
+                <footer>
+                    <div class="total_que">
+                        <!-- Here I've inserted Question Count Number from JavaScript -->
+                    </div>
+                    <button class="next_btn">Next Question</button>
+                </footer>
+            </div>
+            <!-- Result Box -->
+            <div class="result_box">
+                <div class="icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="complete_text">You've completed the Quiz!</div>
+                <div class="score_text">
+                    <!-- Here I've inserted Score Result from JavaScript -->
+                </div>
+                <div class="buttons">
+                    <button class="restart">Replay Quiz</button>
+                    <button class="quit">Quit Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

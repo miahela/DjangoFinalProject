@@ -1,0 +1,47 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="main-photo">
+      <div>
+        <h1>Unlock the power of blockchain</h1>
+        <p>Learn everything you need to know about crypto with our detailed courses</p>
+      </div>
+      
+    </div>
+    <div class="courses">
+      <div class="courses_text">
+        <h2>Highly specialized courses</h2>
+        <p>Choose a course and become a master in a matter of days</p>
+      </div>
+      <div class="courses_articles">
+      {% for post in posts %}
+        <article>
+          <a href="{% url 'post-detail' post.id %}">
+            <div class="article_photo">
+              <img src="{{ post.image.url }}" alt="Whatever">
+            </div>
+            <div class="article_text">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.author }}</p>
+              <h4>{{ post.duration }}</h4>
+            </div>
+          </a>
+        </article>
+    {% endfor %} 
+      </div>
+      
+      
+      {% comment %} {% for post in posts %}
+      <article class="media content-section">
+        <div class="media-body">
+          <div class="article-metadata">
+            <a class="mr-2" href="#">{{ post.author }}</a>
+            <small class="text-muted">{{ post.date_posted|date:"d F Y" }}</small>
+          </div>
+          <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+          <p class="article-content">{{ post.content }}</p>
+        </div>
+      </article>
+    {% endfor %} {% endcomment %}
+    </div>
+    
+{% endblock content %}

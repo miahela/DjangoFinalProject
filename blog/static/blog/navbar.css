@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.navbar .container {
+    max-width: none;
+    padding: 0px 50px;
+}
+
+.brand-name {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.brand-name span{
+    color: #1358ce;
+}
+
+.brand-name:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-nav .nav-item.nav-link {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-item.nav-link:hover {
+    color: #1358ce;
+}
+
+.navbar input[type=text] {
+    float: right;
+    padding: 0 6px;
+    border: solid 1px black;
+    border-right: none;
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+.navbar button {
+    float: left;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #1358ce;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button i {
+    color: white;
+}
+
+#navbar-login,
+#navbar-register {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+#navbar-login {
+    margin-right: 20px;
+    color: black;
+}
+
+#navbar-register {
+    background-color: black;
+    color: white;
+}
+
+#navbar-register:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+#navbar-login:hover {
+    background-color: rgb(206, 206, 206);
+}
